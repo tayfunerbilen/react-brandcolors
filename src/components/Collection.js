@@ -11,10 +11,11 @@ import Loader from './Loader';
 function Collection(props) {
 	const {slugs} = useParams()
 	const history = useHistory()
-	const {setSelectedBrands, selectedBrands, brands} = useContext(MainContext)
+	const {setSelectedBrands, selectedBrands, setSearch, brands} = useContext(MainContext)
 
 	const clearSelectedBrands = () => {
 		setSelectedBrands([])
+		setSearch('')
 		history.push('/')
 	}
 

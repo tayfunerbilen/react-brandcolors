@@ -36,6 +36,10 @@ function App() {
 		setBrands(brandsArray.filter(brand => brand.title.toLowerCase().includes(search)))
 	}, [search])
 
+	useEffect(() => {
+		document.title = 'React BrandColors Demo | PROTOTURK'
+	}, [])
+
 	const data = {
 		brands,
 		selectedBrands,
