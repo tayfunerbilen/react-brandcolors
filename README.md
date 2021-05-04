@@ -8,4 +8,4 @@ Marka renklerini almak için kullandığım brandcolors.net adresindeki sistemi 
 
 Nasıl olduğunu merak ediyorsanız demoyu kontrol edebilirsiniz.
 
-[https://brandcolors.netlify.app/](https://brandcolors.netlify.app/)
+[https://brandcolors.prototurk.com/](https://brandcolors.prototurk.com/)
