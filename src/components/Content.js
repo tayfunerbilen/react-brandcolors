@@ -10,11 +10,11 @@ function Content() {
 
 	const {brands, selectedBrands} = useContext(MainContext)
 
-	const rowRenderer = ({ key, index, style, isScrolling }) => {
-		const content = isScrolling ? <Loader /> : <Brand brand={brands[index]}  />;
+	const rowRenderer = ({ key, index, style, isScrolling, isVisible }) => {
+		// const content = isScrolling ? <Loader /> : <Brand brand={brands[index]}  />;
 		return (
 			<div style={style} key={key}>
-				{content}
+				<Brand brand={brands[index]}  />
 			</div>
 		)
 	}
@@ -26,9 +26,6 @@ function Content() {
 				{selectedBrands.length !== 0 && <Download/>}
 			</header>
 			<section className="brands">
-				{/*{brands.map(brand => (*/}
-				{/*	<Brand brand={brand}/>*/}
-				{/*))}*/}
 				<AutoSizer>
 					{({height, width}) => (
 						<List
