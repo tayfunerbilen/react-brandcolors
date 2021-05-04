@@ -287,3 +287,33 @@ html, body {
   justify-content: center;
   background: rgba(#fff, .8);
 }
+
+@media(max-width: 1000px){
+  #root {
+    flex-direction: column;
+    .sidebar {
+      width: 100%;
+      min-width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ccc;
+      padding: 15px;
+      .logo {
+        margin-bottom: 15px;
+      }
+      .description {
+        font-size: 15px;
+      }
+    }
+    .content {
+      .header {
+        height: 50px;
+        .download {
+          display: none;
+        }
+      }
+      .brands .brand.selected .brand-colors span {
+        text-indent: -9999px;
+      }
+    }
+  }
+}
